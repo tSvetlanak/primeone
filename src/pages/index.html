@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="page">
+            <%= require('html-loader!../blocks/header.html') %>
+                <div class="main-screen" id="navhome">
+                    <div class="main-screen__bg ibg">
+                        <img src="img/bg.jpg" alt="">
+                    </div>
+                </div>
+
+                <%= require('html-loader!../blocks/footer.html') %>
+        </main>
+    </div>
+</body>
+
+</html>

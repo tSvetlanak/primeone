@@ -1,0 +1,121 @@
+.header__burger {
+    z-index: 55;
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 20px;
+}
+
+.header__burger::before,
+.header__burger::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.header__burger::before {
+    top: 0;
+}
+
+.header__burger::after {
+    bottom: 0;
+}
+
+.header__burger.active-burger span,
+.header__burger.active-burger:after,
+.header__burger.active-burger:before {
+    transform: rotate(90deg);
+}
+
+.header__burger.active-burger:after {
+    bottom: 9px;
+    left: -13px;
+}
+
+.header__burger.active-burger:before {
+    top: 9px;
+    left: 13px;
+}
+
+.header__burger span {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+}
+
+.logo {
+    z-index: 55;
+    margin: 0 49% 0 0;
+    width: 92px;
+    height: 24px;
+}
+
+.header__wrap .logo a {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19.6875px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+}
+
+.nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: #2d303a;
+    box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+    padding: 230px 0 0 71px;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+}
+
+.nav.active {
+    top: 0;
+}
+
+.nav__list {
+    display: block;
+    padding-inline-start: 0;
+}
+
+.nav__list li a {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.035em;
+    color: #ffffff;
+}
+
+.nav__list li:before {
+    position: relative;
+    content: "";
+    margin-right: 12px;
+}
+
+.nav__list li:first-child:before {
+    font-family: "fontello";
+    margin-right: 13px;
+    content: "";
+}
+
+.nav__list li:first-child a {
+    margin-top: 0px;
+}
+
+.nav__list li {
+    margin-top: 27px;
+}
